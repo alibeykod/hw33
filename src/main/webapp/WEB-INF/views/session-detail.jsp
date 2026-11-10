@@ -16,9 +16,9 @@
         </tr>
     </thead>
     <tr>
-        <td>${subjectId}</td>
-        <td>${minutes}</td>
-        <td>${notes}</td>
+        <td>${session.subjectId}</td>
+        <td>${session.minutes}</td>
+        <td>${session.notes}</td>
     </tr>
 </table>
 

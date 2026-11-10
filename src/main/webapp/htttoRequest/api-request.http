@@ -1,0 +1,30 @@
+### List All Sessions
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions
+
+### View one session's details
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions/detail?id=1
+
+//CHERA BEHEM STATUS KODE 302 NEMIDE ???????
+### View a non-existent session
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions/detail?id=999
+
+### Show the add form
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions/add
+
+### Add a session
+POST http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions/save
+Content-Type: application/x-www-form-urlencoded
+
+subjectId=1&minutes=8282&notes=Something interesting
+
+### Verify the new session appears
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/sessions
+
+
+### List all subjects
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/subjects
+
+### Status Check
+GET http://localhost:8080/Ali_RafiBeyk_HW33_Maktab146_war_exploded/status
+
+

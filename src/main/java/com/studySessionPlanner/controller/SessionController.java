@@ -31,7 +31,7 @@ public class SessionController {
 
     @GetMapping("/add")
     public String getForm() {
-        return "add-session-form";
+        return "add-session";
     }
 
     @GetMapping("/detail")

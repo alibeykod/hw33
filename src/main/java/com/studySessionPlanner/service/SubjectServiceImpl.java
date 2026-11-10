@@ -2,6 +2,7 @@ package com.studySessionPlanner.service;
 
 import com.studySessionPlanner.model.Subject;
 import com.studySessionPlanner.repository.BaseRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.Optional;
 @Service
 public class SubjectServiceImpl implements BaseServiceSubject<Subject>{
 private final BaseRepository<Subject> subjectRepository ;
-
+    @Autowired
     public SubjectServiceImpl(BaseRepository<Subject> subjectRepository) {
         this.subjectRepository = subjectRepository;
     }

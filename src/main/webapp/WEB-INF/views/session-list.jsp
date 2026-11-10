@@ -17,9 +17,9 @@
     </thead>
     <c:forEach var="session" items="${sessions}">
         <tr>
-            <td><a href="sessions/detail">${subjectId}</a></td>
-            <td><a href="sessions/detail">${minutes}</a></td>
-            <td><a href="sessions/detail">${notes}</a></td>
+            <td><a href="${pageContext.request.contextPath}/sessions/detail?id=1">${session.subjectId}</a></td>
+            <td><a href="${pageContext.request.contextPath}/sessions/detail?id=2">${session.minutes}</a></td>
+            <td><a href="${pageContext.request.contextPath}/sessions/detail?id=3">${session.notes}</a></td>
         </tr>
     </c:forEach>
 </table>

@@ -7,7 +7,7 @@
 <body>
 <h1>Add Session</h1>
 <br>
-<form action="${pageContext.request.contextPath}/save" method="post">
+<form action="${pageContext.request.contextPath}/sessions/save" method="post">
 <label for="subjectId">Subject ID</label>
     <input type="number" name="subjectId" id="subjectId" required>
     <br>
@@ -17,7 +17,7 @@
     <label for="notes">Notes</label>
     <input type="text" name="notes" id="notes" required> <br>
 
-    <button>Submit</button>
+    <a href="${pageContext.request.contextPath}/sessions/save"><button>Submit</button></a>
 </form>
 </body>
 </html>
